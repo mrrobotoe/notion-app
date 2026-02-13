@@ -29,7 +29,7 @@ class NotePolicy
      */
     public function create(User $user): bool
     {
-        return false;
+        return $user->teams->isNotEmpty();
     }
 
     /**

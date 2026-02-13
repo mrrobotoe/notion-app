@@ -11,8 +11,7 @@ class NoteUpdateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        // TODO: add policies
-        return true;
+        return $this->user()->can('update', $this->note);
     }
 
     /**

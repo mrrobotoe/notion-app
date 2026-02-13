@@ -16,6 +16,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('notes', NoteController::class);
 
     Route::patch('teams/{team}/set-current', [TeamController::class, 'setCurrent'])->name('teams.set-current');
+
 });
 
 require __DIR__.'/auth.php';
