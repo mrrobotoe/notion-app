@@ -31,12 +31,12 @@
                     <div>
                         <label for="name" class="block text-sm mb-2 text-foreground">Name</label>
                         <div class="relative">
-                            <input type="text" id="name" name="name" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none"  aria-describedby="name-error">
+                            <input type="text" id="name" name="name" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none" required aria-describedby="name-error">
                             <div class="hidden absolute inset-y-0 end-0 pointer-events-none pe-3">
                                 <svg class="size-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"></svg>
                             </div>
                         </div>
-                        @error('name') <p class="text-xs text-red-600" id="name-error">{{ $message }}</p> @enderror
+                        @error('name') <p class="text-xs text-red-600 mt-2" id="name-error">{{ $message }}</p> @enderror
                     </div>
                     <!-- End Form Group -->
 
@@ -44,14 +44,14 @@
                     <div>
                         <label for="email" class="block text-sm mb-2 text-foreground">Email address</label>
                         <div class="relative">
-                            <input type="email" id="email" name="email" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none"  aria-describedby="email-error">
+                            <input type="email" id="email" name="email" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none" required aria-describedby="email-error">
                             <div class="hidden absolute inset-y-0 end-0 pointer-events-none pe-3">
                                 <svg class="size-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                                 </svg>
                             </div>
                         </div>
-                        @error('email') <p class="text-xs text-red-600" id="email-error">{{ $message }}</p> @enderror
+                        @error('email') <p class="text-xs text-red-600 mt-2" id="email-error">{{ $message }}</p> @enderror
                     </div>
                     <!-- End Form Group -->
 
@@ -61,14 +61,14 @@
                             <label for="password" class="block text-sm mb-2 text-foreground">Password</label>
                         </div>
                         <div class="relative">
-                            <input type="password" id="password" name="password" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none"  aria-describedby="password-error">
+                            <input type="password" id="password" name="password" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none" required aria-describedby="password-error">
                             <div class="hidden absolute inset-y-0 end-0 pointer-events-none pe-3">
                                 <svg class="size-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                                 </svg>
                             </div>
                         </div>
-                        @error('password') <p class="text-xs text-red-600" id="password-error">{{ $message }}</p> @enderror
+                        @error('password') <p class="text-xs text-red-600 mt-2" id="password-error">{{ $message }}</p> @enderror
                     </div>
                     <!-- End Form Group -->
 
@@ -76,14 +76,14 @@
                     <div>
                         <label for="password_confirmation" class="block text-sm mb-2 text-foreground">Confirm Password</label>
                         <div class="relative">
-                            <input type="password" id="password_confirmation" name="password_confirmation" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none"  aria-describedby="confirm-password-error">
+                            <input type="password" id="password_confirmation" name="password_confirmation" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line rounded-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none" required aria-describedby="confirm-password-error">
                             <div class="hidden absolute inset-y-0 end-0 pointer-events-none pe-3">
                                 <svg class="size-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                                 </svg>
                             </div>
                         </div>
-                        @error('password_confirmation') <p class="text-xs text-red-600" id="password_confirmation-error">{{ $message }}</p> @enderror
+                        @error('password_confirmation') <p class="text-xs text-red-600 mt-2" id="password_confirmation-error">{{ $message }}</p> @enderror
                     </div>
                     <!-- End Form Group -->
 

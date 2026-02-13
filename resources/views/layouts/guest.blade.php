@@ -15,7 +15,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="text-gray-900 antialiased min-h-screen flex flex-col justify-center items-center">
-<div class="bg-card border border-card-line rounded-xl shadow-2xs min-w-md">
+<div class="bg-card border border-card-line rounded-xl shadow-2xs min-w-md overflow-hidden">
     @isset($header)
     @endisset
     {{ $slot }}
